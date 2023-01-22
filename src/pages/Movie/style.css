@@ -1,0 +1,195 @@
+.movie-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.movie-detail img {
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.movie-detail h1 {
+    background-color: rgba(0, 0, 0, .40);
+    padding: 6px 9px;
+    border-radius: 12px;
+    margin-top: -650px;
+    margin-left: 84px;
+    color: #fff;
+    font-size: clamp(1em, 1em + 1.7vw, 8em);
+}
+
+.movie-detail p {
+    width: 450px;
+    margin-left: 84px;
+    margin-top: 5px;
+    padding: 6px 4px;
+    border-radius: 12px;
+    font-weight: none;
+    font-size: clamp(1em, 1em + 0.4vw, 1.5em);
+    color: #fff;
+    background-color: rgba(0, 0, 0, .40);
+}
+
+.movie-detail h4 {
+    margin-left: 84px;
+    margin-top: 5px;
+    padding: 6px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .40);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btnsDiv {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 84px;
+    margin-top: 5px;
+    gap: 18px;
+}
+
+.btnsDiv button {
+    background-color: rgba(0, 0, 0, .40);
+    color: #fff;
+    width: 200px;
+    height: 45px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 0;
+    border-radius: 12px;
+    outline: none;
+    padding: 2px;
+    cursor: pointer;
+    transition: all 0.5s;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.btnsDiv button:hover {
+    background-color: #000000;
+    color: #FFF;
+}
+
+.btnsDiv a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btnsDiv a:hover {
+    color: #FFF;
+}
+
+@media screen and (max-width: 900px) {
+    .movie-detail {
+        margin: 0;
+        /*margin-top: 14px;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+    }
+
+    .movie-detail img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .movie-detail h1 {
+        margin: 12px 0;
+        font-size: clamp(1em, 1em + 2.8vw, 8em);
+        color: #dfa906;
+        background-color: none;
+    }
+
+    .movie-detail p {
+        background-color: transparent;
+        text-overflow: ellipsis;
+        white-space: wrap;
+        font-weight: none;
+        width: 90%;
+        margin: -20px 0;
+        color: #fff;
+        font-size: clamp(1em, 0.8em + 01vw, 1.5em);
+    }
+
+    .movie-detail h4 {
+        background-color: transparent;
+        margin: 18px auto;
+        font-weight: 500;
+        font-size: clamp(1em, 0.7em + 1vw, 1.5em);
+        color: #fff;
+    }
+
+    .btnsDiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        gap: 40px;
+    }
+
+    .btnsDiv button {
+        background-color: transparent;
+        color: #fff;
+        width: 180px;
+        height: 40px;
+        margin-top: -12px;
+        margin-bottom: 8px;
+        font-size: clamp(1em, 1em + 0.1vw, 1.5em);
+        font-weight: none;
+        border: solid 1px #fff;
+        border-radius: 8px;
+        outline: none;
+        padding: 2px;
+        cursor: pointer;
+        transition: all 0.5s;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnsDiv button:hover {
+        color: #dfa906;
+    }
+
+    .btnsDiv a {
+        gap: 10px;
+    }
+
+    .btnsDiv a:hover {
+        color: #dfa906;
+    }
+}

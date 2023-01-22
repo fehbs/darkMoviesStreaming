@@ -1,0 +1,112 @@
+.favorites-movies {
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    margin: 70px auto;
+}
+
+.favorites-movies small {
+    color: #eb0a0a;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.favoritesLi button {
+    color: #eb0a0a;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.favoritesLi button:hover {
+    color: #fff;
+}
+
+.favoritesLi span {
+    color: #dfa906;
+    font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.favoritesLi a {
+    font-weight: none;
+    margin: 0;
+    padding: 6px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: solid 1.5px #fff;
+    font-size: 0.8em;
+    gap: 4px;
+}
+
+.favoritesLi a:hover {
+    background-color: darkred;
+}
+
+.favorites-movies h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favorites-movies img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    max-width: 100%;
+    border-radius: 50%;
+    padding: -40px;
+    margin: 40px auto;
+}
+
+.favoritesUl {
+    list-style: none;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.favoritesLi {
+    width: 85%;
+    margin-top: -40px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #000000;
+    box-shadow: 5px 10px 18px rgba(12, 12, 12, 0.397);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .favoritesLi {
+        width: 430px;
+        max-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .favoritesLi a {
+        max-width: 100%;
+    }
+
+    .favoritesLi span {
+        width: 100%;
+        font-size: 1.9rem;
+    }
+
+    .favorites-movies img {
+        width: 65%;
+        max-width: 100%;
+        margin: 40px auto;
+    }
+}
