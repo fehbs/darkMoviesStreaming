@@ -13,11 +13,11 @@ function Footer() {
           </li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">About Us</a></li>
-          <li><a href="#">&copy; Dark Movie 2023</a></li>
-          <li><a href="#"><BsGithub
+          <li><a href="github.com/fehbs">&copy; Dark Movie 2023</a></li>
+          <li><a href="github.com/fehbs"><BsGithub
             size={25}
           /></a></li>
-          <li><a href="#"><BsLinkedin size={22} /></a></li>
+          <li><a href="linkedin.com/in/fernandohbs"><BsLinkedin size={22} /></a></li>
         </ul>
       </div>
     </footer>
